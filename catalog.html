@@ -2,10 +2,191 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Nerds/title>
+    <title>Магазин готовых шаблонов</title>
     <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="apple-touch-icon" href="favicon/180.png">
+    <link rel="icon" href="manifest" href="manifest.webmanifest">
   </head>
   <body>
-
+    <header><!--Шапка-->
+      <nav>
+        <a href="index.html">
+          <img src="img/nerds-logo.png" hight="65.02" width="159.87" alt="Логотип 'Nerds'">
+        </a>
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+    <aside><!--Фильтр товаров-->
+     <h2>Фильтр товаров</h2> 
+     <!--Стоимость+ползунок-->
+     <p>Стоимость:</p>
+     <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Сетка:</legend>
+        <ul>
+          <li>
+           <input type="radio" value="adaptiv" name="adaptiv" id="filter-adaptiv" checked>
+           <label for="filter-adaptiv">Адаптивная</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+           <input type="radio" value="fixed" name="fixed" id="filter-fixed">
+           <label for="filter-fixed">Фиксированная</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+           <input type="radio" value="rubber" name="rubber" id="filter-rubber">
+           <label for="filter-rubber">Резиновая</label>
+          </li>
+        </ul>
+        <legend>Особенности:</legend>
+        <ul>
+          <li>
+           <input type="checkbox" name="slider" id="filter-slider" checked>
+           <label for="filter-slider">Слайдер</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+           <input type="checkbox" name="fixed" id="filter-block">
+           <label for="filter-block">Блок преимуществ</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+           <input type="checkbox" name="news" id="filter-news" checked >
+           <label for="filter-news">Новости</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+           <input type="checkbox" name="gallery" id="filter-gallery">
+           <label for="filter-gallery">Галерея</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+           <input type="checkbox" name="cart" id="filter-cart">
+           <label for="filter-cart">Корзина</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Отправить</button>
+    </aside>
+    </section>
+    <section><!--Сортировка + готовые шаблоны-->
+      <h2>Готовые шаблоны</h2>
+      <p>Сортировать:</p>
+      <ul>
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По названию</li>
+      </ul>
+      <ul><!--Sedona-->
+        <li>
+          <img src="img/catalog/sedona.jpg" height="578" width="359" alt="Шаблон 'Sedona'">
+        </li>
+        <li>
+          <img src="img/catalog/pink.jpg" height="578" width="359" alt="Шаблон 'PINK APP'">
+        </li>
+        <li>
+          <img src="img/catalog/barbershop.jpg" height="578" width="359" alt="Шаблон 'Barbershop BORODINSKI'">
+        </li>
+        <li>
+          <img src="img/catalog/baskets.jpg" height="578" width="359" alt="Шаблон 'Вязанные корзинки'">
+        </li>
+        <li>
+          <img src="img/catalog/forms.jpg" height="578" width="359" alt="Шаблон 'Формы обучения'">
+        </li>
+        <li>
+          <img src="img/catalog/craft.jpg" height="578" width="359" alt="Шаблон 'Кравтовый квас'">
+        </li>
+      </ul>
+    </section>
+    <ul>
+      <li>
+        <a>1</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">2</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">3</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="#">Следующая</a>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <section>
+     <img src="img/map+marker.jpg" height="416" width="1440" alt="Карта c логотипом 'Nerds'">
+      <div>
+      <h2>NЁRDS DESIGN STUDIO</h2>
+      <p>1
+       наб. Реки Карповки,<br>
+       5 лит П, Санкт-Петербург<br>
+       <a href="tel:+78005558628">+7 800 555-86-28</a>
+      </p>
+      <a href="#">Напишите нам</a>
+     </div>
+     <section><!--Напишите нам-->
+       <h2>Напишите нам</h2>
+       <form action="https://echo.htmlacademy.ru" method="post">
+         <p>
+          <label for="appointment-name">Ваше имя:</label>
+          <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+         
+          <label for="appointment-email">Ваш емейл:</label><!--1 вариант-->
+          <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
+         
+          <label>Ваш емейл: <input type="email" name="email" placeholder="email@example.com"></label><!--2 вариант-->
+         </p>
+         <p>
+           <label for="appointment-text">Текст письма:</label>
+           <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+         </p>
+          <button type="submit">Отправить</button>
+       </form>
+     </section>
+    </section>
+     <ul>
+       <li>
+         <a href="#">Вконтакте</a>
+       </li>
+     </ul>
+     <ul>
+       <li>
+         <a href="#">Фэйсбук</a>
+       </li>
+     </ul>
+     <ul>
+       <li>
+         <a href="#">Инстаграм</a>
+       </li>
+     </ul>
+     <p>Давайте дружить, это выгодно!</p>
+     <p>Скидка 10% для друзей из социальных сетей.</p>
+   </section>
+  </footer>
   </body>
 </html>
