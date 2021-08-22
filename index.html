@@ -1,147 +1,184 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Nerds</title>
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-    <link rel="icon" href="apple-touch-icon" href="favicon/180.png">
-    <link rel="icon" href="manifest" href="manifest.webmanifest">
-  </head>
-  <body>
-   <header><!--Навигация-->
-     <nav>
-       <a>
-        <img src="img/nerds-logo.png" height="65.02" width="159.87" alt="Логотип Nerds">
-       </a>
-       <ul>
-         <li><a href="#">Студия</a></li>
-         <li><a href="#">Клиенты</a></li>
-         <li><a href="catalog.html">Магазин</a></li>
-         <li><a href="#">Контакты</a></li>
-       </ul>
-       <ul>
-         <li><a href="#">Корзина</a></li>
-       </ul>
-     </nav>
-     <!-- Слайдер-->
-     
-   </header>
-   <main>
-     <h1>Дизайн-студия из Краснодара</h1>
-      <section><!--Услуги-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Nerds</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="apple-touch-icon" href="favicon/180.png">
+  <link rel="icon" href="manifest" href="manifest.webmanifest">
+  <link href="normalaiz.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <header class="page-header">
+    <!--Навигация-->
+    <nav class="navigation">
+      <a class="navigation__logo logo">
+        <img class="logo__img" src="img/nerds-logo.png" height="65.02" width="159.87" alt="Логотип Nerds">
+      </a>
+      <ul class="navigation__list main-nav">
+        <li class="main-nav__item">
+          <a href="#">Студия</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Клиенты</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="catalog.html">Магазин</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="navigation__basket">
+        <li class="basket__item">
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Слайдер-->
+  </header>
+  <main class="page-content">
+    <h1>Дизайн-студия из Краснодара</h1>
+    <section class="advantages">
+      <!--Услуги-->
       <h2>Услуги</h2>
-      <ul>
-        <li>
-          <img src="img/i-laptop.png" height="146" width="300" alt="Ноутбук">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#">Заказать</a>
+      <ul class="advantages__list">
+        <li class="adventages__item">
+          <div class="advantages__img-wrap">
+            <img src="img/i-laptop.png" height="146" width="300" alt="Ноутбук">
+          </div>
+          <h3 class="adventages__title">Веб-сайты</h3>
+          <p class="adventages__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="adventages__link" href="#">Заказать</a>
         </li>
-      </ul>
-      <ul>
-        <li>
-         <img src="img/i-smartphone.jpg" height="146" width="300" alt="Смартфон">
-         <h3>Приложения</h3>
-         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-         <a href="#">Заказать</a>
+        <li class="adventages__item">
+          <div class="advantages__img-wrap">
+            <img src="img/i-smartphone.jpg" height="146" width="300" alt="Смартфон">
+          </div>
+          <h3 class="adventages__title">Приложения</h3>
+          <p class="adventages__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="adventages__link" href="#">Заказать</a>
         </li>
-      </ul>
-      <ul>
-        <li>
-        <img src="img/i-presentation.jpg" height="146" width="300" alt="Презентация">
-        <h3>Презентации</h3>
-        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-        <a href="#">Заказать</a>
+        <li class="adventages__item">
+          <div class="advantages__img-wrap">
+            <img src="img/i-presentation.jpg" height="146" width="300" alt="Презентация">
+          </div>
+          <h3 class="adventages__title">Презентации</h3>
+          <p class="adventages__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="adventages__link" href="#">Заказать</a>
         </li>
       </ul>
     </section>
-    <section><!-- О компании -->
-      <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. 
-         Ставим математический расчет превыше креатива.
-         Работаем не покладая рук, как роботы.
+    <section class="about-us">
+      <!-- О компании -->
+      <div class="left-col">
+        <p class="about-us__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about-us__text">Исповедуем принципы минимализма и чистоты.
+          Ставим математический расчет превыше креатива.
+          Работаем не покладая рук, как роботы.
         </p>
-        <p>Выполняем заказы на разработку:</p>
-        <ul>
-         <li>Веб-сайтов любой сложности</li>
-         <li>Мобильных приложений для iOS и Android</li>
-         <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <p class="about-us__list-text">Выполняем заказы на разработку:</p>
+        <ul class="about-us__list">
+          <li class="list__item">Веб-сайтов любой сложности</li>
+          <li class="list__item">Мобильных приложений для iOS и Android</li>
+          <li class="list__item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-        <img src="img/nerds-illustration.jpg" height="208" width="360" alt="Логотип 'Nerds'">
-        <p> 2004 года любим точность во всем:</p>
-        <dl>
-         <div>
-           <dt>140<sup>%</sup></dt>
-           <dd>Уровень самоотдачи</dd>
-         </div>
-         <div>
-          <dt>100<sup>%</sup></dt>
-          <dd>Соблюдение сроков</dd>
-        </div>
-        <div>
-          <dt>50<sup>%</sup></dt>
-          <dd>Минимальная предоплата</dd>
-        </div>
-        </dl>
-    </section>
-    <section>  <!--Клиенты-->
-      <img src="img/clientele/htmlacademy.png" height="57" width="199" alt="Логотип 'Htmlacademy'">
-      <img src="img/clientele/pink.png" height="90" width="209" alt="Логотип 'Pink'">
-      <img src="img/clientele/barbershop.jpg" height="52" width="158" alt="Логотип barbershop 'BORODINSKI'">
-      <img src="img/clientele/mishka.png" height="84" width="173" alt="Логотип 'MiSHKA'">
-    </section>
-    </main>
-    <footer>
-     <section>
-      <img src="img/map+marker.jpg" height="416" width="1440" alt="Карта c логотипом 'Nerds'">
-       <div>
-       <h2>NЁRDS DESIGN STUDIO</h2>
-       <p>
-        наб. Реки Карповки,<br>
-        5 лит П, Санкт-Петербург<br>
-        <a href="tel:+78005558628">+7 800 555-86-28</a>
-       </p>
-       <a href="#">Напишите нам</a>
       </div>
-      <section><!--Напишите нам-->
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-           <label for="appointment-name">Ваше имя:</label>
-           <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
-          
-           <label for="appointment-email">Ваш емейл:</label><!--1 вариант-->
-           <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
-          
-           <label>Ваш емейл: <input type="email" name="email" placeholder="email@example.com"></label><!--2 вариант-->
+      <div class="right-col">
+        <div class="illustration__img-wrap">
+          <img src="img/nerds-illustration.jpg" height="208" width="360" alt="Логотип 'Nerds'">
+        </div>
+        <p class="title"> 2004 года любим точность во всем:</p>
+        <dl class="statistics__list">
+          <div>
+            <dt class="statistics__termin">140<sup>%</sup></dt>
+            <dd class="statistics__data">Уровень самоотдачи</dd>
+          </div>
+          <div>
+            <dt class="statistics__termin">100<sup>%</sup></dt>
+            <dd class="statistics__data">Соблюдение сроков</dd>
+          </div>
+          <div>
+            <dt class="statistics__termin">50<sup>%</sup></dt>
+            <dd class="statistics__data">Минимальная предоплата</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <section class="customers">
+      <!--Клиенты-->
+      <a class="customers__html" href="#" target="_blank">
+        <img src="img/clientele/htmlacademy.svg" height="57" width="199" alt="Логотип 'Htmlacademy'">
+      </a>
+      <a class="customers__pink" href="#" target="_blank">
+        <img src="img/clientele/pink.png" height="90" width="209" alt="Логотип 'Pink'">
+      </a>
+      <a class="customers__barbershop" href="#" target="_blank">
+        <img src="img/clientele/barbershop.jpg" height="52" width="158" alt="Логотип barbershop 'BORODINSKI'">
+      </a>
+      <a class="customers__mishka" href="#" target="_blank">
+        <img src="img/clientele/mishka.png" height="84" width="173" alt="Логотип 'MiSHKA'">
+      </a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="map">
+      <img src="img/map+marker.jpg" height="416" width="1440" alt="Карта c логотипом 'Nerds'">
+      <div class="map__write-us write-us">
+        <h2 class="write-us__title">Nerds design studio</h2>
+        <p class="write-us__text">
+          наб. Реки Карповки,<br>
+          5 лит П, Санкт-Петербург<br>
+          <a class="write-us__link" href="tel:+78005558628">+7 800 555-86-28</a>
+        </p>
+        <a href="write-us.html">Напишите нам</a>
+      </div>
+      <section class="map__contacts contacts">
+        <!--Напишите нам-->
+        <h2 class="contacts__title">Напишите нам</h2>
+        <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contacts__form-item">
+            <label class="contacts__label" for="appointment-name">Ваше имя:</label>
+            <input class="contacts__input" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
-          <p>
-            <label for="appointment-text">Текст письма:</label>
-            <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+          <p class="contacts__form-item">
+            <label class="contacts__label" for="appointment-email">Ваш емейл:</label>
+            <!--1 вариант-->
+            <input class="contacts__input" id="appointment-email" type="email" name="email"
+              placeholder="email@example.com">
           </p>
-           <button type="submit">Отправить</button>
+          <p class="contacts__form-item">
+            <label class="contacts__label" for="appointment-text">Текст письма:</label>
+            <input class="contacts__messege-field" id="appointment-text" type="text" name="text"
+              placeholder="В свободной форме">
+          </p>
+          <button type="submit">Отправить</button>
         </form>
       </section>
-     </section>
-      <ul>
-        <li>
-          <a href="#">Вконтакте</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">Фэйсбук</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">Инстаграм</a>
-        </li>
-      </ul>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
-   </footer>
-  </body>
+    <section class="socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="#">Вконтакте</a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--fb" href="#">Фэйсбук</a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--insta" href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </section>
+    <div class="socials_friends">
+      <p class="friends__text">Давайте дружить, это выгодно!</p>
+      <p class="friends__text">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    </section>
+  </footer>
+</body>
+
 </html>
