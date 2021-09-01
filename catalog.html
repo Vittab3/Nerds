@@ -9,100 +9,104 @@
     <link rel="icon" href="manifest" href="manifest.webmanifest">
   </head>
   <body class="page">
-    <header class="page-header"><!--Шапка-->
-      <nav class="navigation">
-        <a class="navigation__logo logo" href="index.html">
-          <img class="logo__img" src="img/nerds-logo.png" hight="65.02" width="159.87" alt="Логотип 'Nerds'">
+    <header class="page-header">
+      <!--Навигация-->
+      <nav class="page-header navigation">
+        <a class="navigation__logo logo">
+          <img class="logo__img" src="img/nerds-logo.png" height="65" width="160" alt="Логотип Nerds">
         </a>
         <ul class="navigation__list main-nav">
-          <li class="main-nav__item">
+          <li class="main-nav__item--studio">
             <a href="#">Студия</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item--customers">
             <a href="#">Клиенты</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item--shop">
             <a class="active">Магазин</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item--contacts">
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="navigation__basket">
-          <li class="basket__item">
+        <ul class="navigation__cart user">
+          <li class="user">
             <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
     </header>
   <main class="page-content">
-    <h1>Магазин готовых шаблонов</h1>
-    <aside class="filters"><!--Фильтр товаров-->
+    <h1 class="page-content__title">Магазин готовых шаблонов</h1>
+    <aside class="page-content filters">
+     <!--Фильтр товаров-->
      <h2>Фильтр товаров</h2> 
      <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
-       <fieldset class="cost">
-         <p class="cost__text">Стоимость:</p><!--Стоимость+ползунок-->
+       <fieldset class="filters__form cost">
+         <p class="cost__text">Стоимость:</p>
+         <!--Стоимость+ползунок-->
        </fieldset>
-       <fieldset class="grid">
-         <legend>Сетка:</legend>
+       <fieldset class="filters__form grid">
+         <legend class="grid__text">Сетка:</legend>
          <ul class="grid__list">
-           <li class="grid__item">
-             <input type="radio" value="adaptive" name="radio-input" id="filter-adaptive" checked>
-             <label for="filter-adaptive">Адаптивная</label>
+           <li class="grid__item grid__item--adaptive">
+             <input class="grid__imput grid__input--adaptive" type="radio" value="adaptive" name="radio-input" id="filter-adaptive" checked>
+             <label class="grid__label grid__label--adaptive" for="filter-adaptive">Адаптивная</label>
+           </li >
+           <li class="grid__item grid__item--fixed">
+             <input class="grid__imput grid__input--fixed" type="radio" value="fixed" name="radio-input" id="filter-fixed">
+             <label class="grid__label grid__label--fixed" for="filter-fixed">Фиксированная</label>
            </li>
-           <li class="grid__item">
-             <input type="radio" value="fixed" name="radio-input" id="filter-fixed">
-             <label for="filter-fixed">Фиксированная</label>
-           </li>
-           <li class="grid__item">
-             <input type="radio" value="rubber" name="radio-input" id="filter-rubber">
-             <label for="filter-rubber">Резиновая</label>
+           <li class="grid__item grid__item--rubber">
+             <input class="grid__imput grid__input--rubber" type="radio" value="rubber" name="radio-input" id="filter-rubber">
+             <label class="grid__label grid__label--rubber" for="filter-rubber">Резиновая</label>
            </li>
          </ul>
         </fieldset> 
-        <fieldset class="features">
-         <legend>Особенности:</legend>
+        <fieldset class="filters__form features">
+         <legend class="features__text">Особенности:</legend>
          <ul class="features__list">
-           <li class="features__item">
-             <input type="checkbox" name="slider" id="filter-slider" checked>
-             <label for="filter-slider">Слайдер</label>
+           <li class="features__item features__item--slider">
+             <input class="features__input features__input--slider" type="checkbox" name="slider" id="filter-slider" checked>
+             <label class="features__label features__label--slider" for="filter-slider">Слайдер</label>
            </li>
-           <li class="features__item">
-             <input type="checkbox" name="fixed" id="filter-block">
-             <label for="filter-block">Блок преимуществ</label>
+           <li class="features__item features__item--fixed">
+             <input class="features__input features__input--fixed" type="checkbox" name="fixed" id="filter-block">
+             <label class="features__label features__label--fixed" for="filter-block">Блок преимуществ</label>
            </li>
-           <li class="features__item">
-             <input type="checkbox" name="news" id="filter-news" checked >
-             <label for="filter-news">Новости</label>
+           <li class="features__item features__item--news">
+             <input class="features__input features__input--news" type="checkbox" name="news" id="filter-news" checked >
+             <label class="features__label features__label--news" for="filter-news">Новости</label>
            </li>
-           <li class="features__item">
-             <input type="checkbox" name="gallery" id="filter-gallery">
-             <label for="filter-gallery">Галерея</label>
+           <li class="features__item features__item--gallery">
+             <input class="features__input features__input--gallery" type="checkbox" name="gallery" id="filter-gallery">
+             <label class="features__label features__label--gallery" for="filter-gallery">Галерея</label>
            </li>
-           <li class="features__item">
-             <input type="checkbox" name="cart" id="filter-cart">
-             <label for="filter-cart">Корзина</label>
+           <li class="features__item features__item--cart">
+             <input class="features__input features__input--cart" type="checkbox" name="cart" id="filter-cart">
+             <label class="features__label features__label--cart" for="filter-cart">Корзина</label>
            </li>
          </ul>
         </fieldset>
       </form> 
-      <button type="submit">Отправить</button>
+      <button class="page-content__button" type="submit">Отправить</button>
     </aside>
-    <section class="catalog"><!--Сортировка + готовые шаблоны-->
+    <section class="page-content catalog">
+      <!--Сортировка + готовые шаблоны-->
       <h2>Готовые шаблоны</h2>
       <section class="catalog__sort sorting">
       <p class="sorting__text">Сортировать:</p>
       <ul class="sorting__list">
-        <li class="sorting__item">По цене</li>
-        <li class="sorting__item">По типу</li>
-        <li class="sorting__item">По названию</li>
+        <li class="sorting__item sorting__item--price">По цене</li>
+        <li class="sorting__item sorting__item--type">По типу</li>
+        <li class="sorting__item sorting__item--by-name">По названию</li>
       </ul>
       <ul class="sorting__arrows">
         <li class="sorting__arrows-up">
-         <a class="sorting__arrows-link" href=""></a>
-        </li class="sorting__arrows-down">
-        <li>
-          <a class="sorting__arrows-link" href=""></a>
+         <a class="sorting__arrows-link" href="#"></a>
+        </li>
+        <li class="sorting__arrows-down">
+          <a class="sorting__arrows-link" href="#"></a>
         </li>
       </ul>
       <ul class="catalog__list">
@@ -111,7 +115,7 @@
           <div class="hideen">
            <h2></h2>
            <p></p>
-           <a href=""></a>
+           <a href="#"></a>
           </div> 
         </li>
         <li class="catalog__item">
@@ -119,103 +123,105 @@
           <div class="hideen">
             <h2></h2>
             <p></p>
-            <a href=""></a>
+            <a href="#"></a>
         </li>
         <li class="catalog__item">
           <img src="img/catalog/barbershop.jpg" height="578" width="359" alt="Шаблон 'Barbershop BORODINSKI'">
           <div class="hideen">
             <h2></h2>
             <p></p>
-            <a href=""></a>
+            <a href="#"></a>
         </li>
         <li class="catalog__item">
           <img src="img/catalog/baskets.jpg" height="578" width="359" alt="Шаблон 'Вязанные корзинки'">
           <div class="hideen">
             <h2></h2>
             <p></p>
-            <a href=""></a>
+            <a href="#"></a>
         </li>
         <li class="catalog__item">
           <img src="img/catalog/forms.jpg" height="578" width="359" alt="Шаблон 'Формы обучения'">
           <div class="hideen">
             <h2></h2>
             <p></p>
-            <a href=""></a>
+            <a href="#"></a>
         </li>
         <li class="catalog__item">
           <img src="img/catalog/craft.jpg" height="578" width="359" alt="Шаблон 'Кравтовый квас'">
           <div class="hideen">
             <h2></h2>
             <p></p>
-            <a href=""></a>
+            <a href="#"></a>
         </li>
       </ul>
     </section>
-    <ul class="pagination">
+    <ul class=" page-content pagination">
       <li class="pagination__item">
-        <a>1</a>
+        <a class="active">1</a>
       </li>
       <li class="pagination__item">
-        <a href="#">2</a>
+        <a class="pagination__link" href="#">2</a>
       </li>
       <li class="pagination__item">
-        <a href="#">3</a>
+        <a class="pagination__link" href="#">3</a>
       </li>
       <li class="pagination__item">
-        <a href="#">Следующая</a>
+        <a class="pagination__link" href="#">Следующая</a>
       </li>
     </ul>
   </main>
   <footer class="page-footer">
-    <section class="map">
+    <section class="page-footer map">
       <img src="img/map+marker.jpg" height="416" width="1440" alt="Карта c логотипом 'Nerds'">
       <div class="map__write-us write-us">
         <h2 class="write-us__title">Nerds design studio</h2>
         <p class="write-us__text">
-         наб. Реки Карповки,<br>
-         5 лит П, Санкт-Петербург<br>
-         <a class="write-us__link"href="tel:+78005558628">+7 800 555-86-28</a>
+          наб. Реки Карповки,<br>
+          5 лит П, Санкт-Петербург<br>
+          <a class="write-us__tel" href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
-        <a href="write-us.html">Напишите нам</a>
+        <a class="write-us__link" href="write-us.html">Напишите нам</a>
       </div>
-      <section class="map__contacts contacts"><!--Напишите нам-->
+      <!--Напишите нам-->
+      <section class="map__contacts contacts">
         <h2 class="contacts__title">Напишите нам</h2>
         <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="contacts__form-item">
-            <label class="contacts__label" for="appointment-name">Ваше имя:</label>
-            <input class="contacts__input" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+          <p class="contacts__form-item contacts__form-item--text ">
+            <label class="contacts__label contacts__label--text" for="appointment-name">Ваше имя:</label>
+            <input class="contacts__input contacts__input--text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
-          <p class="contacts__form-item">
-            <label class="contacts__label" for="appointment-email">Ваш емейл:</label><!--1 вариант-->
-            <input class="contacts__input" id="appointment-email" type="email" name="email" placeholder="email@example.com">       
+          <p class="contacts__form-item contacts__form-item--email">
+            <label class="contacts__label contacts__label--email" for="appointment-email">Ваш емейл:</label>
+            <input class="contacts__input contacts__input--email" id="appointment-email" type="email" name="email"
+              placeholder="email@example.com">
           </p>
-          <p class="contacts__form-item">
-           <label class="contacts__label" for="appointment-text">Текст письма:</label>
-           <input class="contacts__messege-field"id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+          <p class="contacts__form-item contacts__form-item--messege-field">
+            <label class="contacts__label contacts__label--messege-field" for="appointment-text">Текст письма:</label>
+            <input class="contacts__input contacts__input--messege-field" id="appointment-text" type="text" name="text"
+              placeholder="В свободной форме">
           </p>
-          <button type="submit">Отправить</button>
-       </form>
-     </section>
+          <button class="contacts__button" type="submit">Отправить</button>
+        </form>
+      </section>
     </section>
     <section class="socials">
       <ul class="socials__list">
-        <li class="socials__item">
+        <li class="socials__item socials__item--vk">
           <a class="socials__link socials__link--vk" href="#">Вконтакте</a>
         </li>
-        <li class="socials__item">
+        <li class="socials__item socials__item--fb">
           <a class="socials__link socials__link--fb" href="#">Фэйсбук</a>
         </li>
-        <li class="socials__item">
+        <li class="socials__item socials__item--insta">
           <a class="socials__link socials__link--insta" href="#">Инстаграм</a>
         </li>
       </ul>
-     </section>
-     <div class="socials_friends"> 
-      <p class="friends__text">Давайте дружить, это выгодно!</p>
-      <p class="friends__text">Скидка 10% для друзей из социальных сетей.</p>
-     </div>
-   </section>
+    </section>
+    <div class="socials__friends friends">
+      <p class="friends__profitable">Давайте дружить, это выгодно!</p>
+      <p class="friends__discounts">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    </section>
   </footer>
   </body>
 </html>
-ul>li*8>p>a+span
