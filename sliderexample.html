@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Слайдер</title>
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .owl-carousel {
+      height: 450px;
+      background-color: darkgray;
+    }
+
+    .slider_bg {
+      max-width: 100%;
+      height: 450px;
+      background-size: cover;
+      background-position: center center;
+      padding-top: 150px;
+
+
+    }
+
+    .slider_bg img {
+      position: absolute;
+      height: 150px;
+      width: 150px !important;
+
+      right: 100px;
+    }
+
+    .slider_bg_1 {
+      /* background-image: url("img/slider/animals-macro-fish-yellow.jpeg"); */
+    }
+
+    .slider_bg_2 {
+      /*  background-image: url("img/slider/dog-puppy-small-lie-down.jpeg"); */
+    }
+
+    .slider_bg_3 {
+      /* background-image: url("img/slider/falling-stars-pattern-light-landscapes.jpeg");*/
+    }
+
+    .slider_bg_4 {
+      /*  background-image: url("img/slider/mountains-sunset-road-cars.jpeg");*/
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+
+  </style>
+</head>
+
+<body>
+  <div class="owl-carousel owl-theme">
+    <div class="slider_bg slider_bg_1">
+      <div class="container">
+        <h2>Заголовок</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, dolorem eos,
+          similique quidem deserunt eum molestiae, dolore illum quos in facilis eius
+          cupiditate reiciendis laboriosam tempore dicta maxime tenetur quis.</p>
+        <a href="#">Кнопочка</a>
+        <img src="sl.png" alt="">
+      </div>
+    </div>
+    <div class="slider_bg slider_bg_2">
+      <div class="container">
+        <h2>Заголовок</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, dolorem eos,
+          similique quidem deserunt eum molestiae, dolore illum quos in facilis eius
+          cupiditate reiciendis laboriosam tempore dicta maxime tenetur quis.</p>
+        <a href="#">Кнопочка</a>
+      </div>
+    </div>
+    <div class="slider_bg slider_bg_3">
+      <div class="container">
+        <h2>Заголовок</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, dolorem eos,
+          similique quidem deserunt eum molestiae, dolore illum quos in facilis eius
+          cupiditate reiciendis laboriosam tempore dicta maxime tenetur quis.</p>
+        <a href="#">Кнопочка</a>
+      </div>
+    </div>
+    <div class="slider_bg slider_bg_4">
+      <div class="container">
+        <h2>Заголовок</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, dolorem eos,
+          similique quidem deserunt eum molestiae, dolore illum quos in facilis eius
+          cupiditate reiciendis laboriosam tempore dicta maxime tenetur quis.</p>
+        <a href="#">Кнопочка</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        nav: true,
+        items: 1,
+
+      });
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,174 +1,182 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Магазин готовых шаблонов</title>
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
-    <link rel="icon" href="apple-touch-icon" href="favicon/180.png">
-    <link rel="icon" href="manifest" href="manifest.webmanifest">
-  </head>
-  <body class="page">
-    <header class="page-header">
-      <!--Навигация-->
-      <nav class="page-header navigation">
-        <a class="navigation__logo logo">
-          <img class="logo__img" src="img/nerds-logo.png" height="65" width="160" alt="Логотип Nerds">
-        </a>
-        <ul class="navigation__list main-nav">
-          <li class="main-nav__item--studio">
-            <a href="#">Студия</a>
-          </li>
-          <li class="main-nav__item--customers">
-            <a href="#">Клиенты</a>
-          </li>
-          <li class="main-nav__item--shop">
-            <a class="active">Магазин</a>
-          </li>
-          <li class="main-nav__item--contacts">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="navigation__cart user">
-          <li class="user">
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+
+<head>
+  <meta charset="utf-8">
+  <title>Магазин готовых шаблонов</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="apple-touch-icon" href="favicon/180.png">
+  <link rel="icon" href="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <header class="page-header">
+    <!--Навигация-->
+    <nav class="page-header navigation">
+      <a class="navigation__logo logo">
+        <img class="logo__img" src="img/nerds-logo.png" height="65" width="160" alt="Логотип Nerds">
+      </a>
+      <ul class="navigation__list main-nav">
+        <li class="main-nav__item">
+          <a href="#">Студия</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Клиенты</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="active">Магазин</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="navigation__cart user">
+        <li class="user__item">
+          <a class="user__link" href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main class="page-content">
     <h1 class="page-content__title">Магазин готовых шаблонов</h1>
     <aside class="page-content filters">
-     <!--Фильтр товаров-->
-     <h2>Фильтр товаров</h2> 
-     <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
-       <fieldset class="filters__form cost">
-         <p class="cost__text">Стоимость:</p>
-         <!--Стоимость+ползунок-->
-       </fieldset>
-       <fieldset class="filters__form grid">
-         <legend class="grid__text">Сетка:</legend>
-         <ul class="grid__list">
-           <li class="grid__item grid__item--adaptive">
-             <input class="grid__imput grid__input--adaptive" type="radio" value="adaptive" name="radio-input" id="filter-adaptive" checked>
-             <label class="grid__label grid__label--adaptive" for="filter-adaptive">Адаптивная</label>
-           </li >
-           <li class="grid__item grid__item--fixed">
-             <input class="grid__imput grid__input--fixed" type="radio" value="fixed" name="radio-input" id="filter-fixed">
-             <label class="grid__label grid__label--fixed" for="filter-fixed">Фиксированная</label>
-           </li>
-           <li class="grid__item grid__item--rubber">
-             <input class="grid__imput grid__input--rubber" type="radio" value="rubber" name="radio-input" id="filter-rubber">
-             <label class="grid__label grid__label--rubber" for="filter-rubber">Резиновая</label>
-           </li>
-         </ul>
-        </fieldset> 
-        <fieldset class="filters__form features">
-         <legend class="features__text">Особенности:</legend>
-         <ul class="features__list">
-           <li class="features__item features__item--slider">
-             <input class="features__input features__input--slider" type="checkbox" name="slider" id="filter-slider" checked>
-             <label class="features__label features__label--slider" for="filter-slider">Слайдер</label>
-           </li>
-           <li class="features__item features__item--fixed">
-             <input class="features__input features__input--fixed" type="checkbox" name="fixed" id="filter-block">
-             <label class="features__label features__label--fixed" for="filter-block">Блок преимуществ</label>
-           </li>
-           <li class="features__item features__item--news">
-             <input class="features__input features__input--news" type="checkbox" name="news" id="filter-news" checked >
-             <label class="features__label features__label--news" for="filter-news">Новости</label>
-           </li>
-           <li class="features__item features__item--gallery">
-             <input class="features__input features__input--gallery" type="checkbox" name="gallery" id="filter-gallery">
-             <label class="features__label features__label--gallery" for="filter-gallery">Галерея</label>
-           </li>
-           <li class="features__item features__item--cart">
-             <input class="features__input features__input--cart" type="checkbox" name="cart" id="filter-cart">
-             <label class="features__label features__label--cart" for="filter-cart">Корзина</label>
-           </li>
-         </ul>
+      <!--Фильтр товаров-->
+      <h2>Фильтр товаров</h2>
+      <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filters__form cost">
+          <p class="cost__text">Стоимость:</p>
+          <!--Стоимость+ползунок-->
         </fieldset>
-      </form> 
+        <fieldset class="filters__form grid">
+          <legend class="grid__text">Сетка:</legend>
+          <ul class="grid__list">
+            <li class="grid__item">
+              <input type="radio" value="adaptive" name="radio-input" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="grid__item">
+              <input type="radio" value="fixed" name="radio-input" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="grid__item ">
+              <input type="radio" value="rubber" name="radio-input" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filters__form features">
+          <legend class="features__text">Особенности:</legend>
+          <ul class="features__list">
+            <li class="features__item">
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li class="features__item">
+              <input type="checkbox" name="fixed" id="filter-block">
+              <label for="filter-block">Блок преимуществ</label>
+            </li>
+            <li class="features__item">
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="features__item">
+              <input type="checkbox" name="gallery"
+                id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li class="features__item">
+              <input type="checkbox" name="cart" id="filter-cart">
+              <label for="filter-cart">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
       <button class="page-content__button" type="submit">Отправить</button>
     </aside>
     <section class="page-content catalog">
       <!--Сортировка + готовые шаблоны-->
       <h2>Готовые шаблоны</h2>
       <section class="catalog__sort sorting">
-      <p class="sorting__text">Сортировать:</p>
-      <ul class="sorting__list">
-        <li class="sorting__item sorting__item--price">По цене</li>
-        <li class="sorting__item sorting__item--type">По типу</li>
-        <li class="sorting__item sorting__item--by-name">По названию</li>
+        <p class="sorting__text">Сортировать:</p>
+        <ul class="sorting__list">
+          <li class="sorting__item">По цене</li>
+          <li class="sorting__item">По типу</li>
+          <li class="sorting__item">По названию</li>
+        </ul>
+        <ul class="sorting__arrows">
+          <li class="sorting__arrows-up">
+            <a class="sorting__arrows-link" href="#"></a>
+          </li>
+          <li class="sorting__arrows-down">
+            <a class="sorting__arrows-link" href="#"></a>
+          </li>
+        </ul>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <img src="img/catalog/sedona.jpg" height="578" width="359" alt="Шаблон 'Sedona'">
+            <div class="hideen">
+              <h2></h2>
+              <p></p>
+              <a href="#"></a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img src="img/catalog/pink.jpg" height="578" width="359" alt="Шаблон 'PINK APP'">
+            <div class="hideen">
+              <h2></h2>
+              <p></p>
+              <a href="#"></a>
+          </li>
+          <li class="catalog__item">
+            <img src="img/catalog/barbershop.jpg" height="578" width="359" alt="Шаблон 'Barbershop BORODINSKI'">
+            <div class="hideen">
+              <h2></h2>
+              <p></p>
+              <a href="#"></a>
+          </li>
+          <li class="catalog__item">
+            <img src="img/catalog/baskets.jpg" height="578" width="359" alt="Шаблон 'Вязанные корзинки'">
+            <div class="hideen">
+              <h2></h2>
+              <p></p>
+              <a href="#"></a>
+          </li>
+          <li class="catalog__item">
+            <img src="img/catalog/forms.jpg" height="578" width="359" alt="Шаблон 'Формы обучения'">
+            <div class="hideen">
+              <h2></h2>
+              <p></p>
+              <a href="#"></a>
+          </li>
+          <li class="catalog__item">
+            <img src="img/catalog/craft.jpg" height="578" width="359" alt="Шаблон 'Кравтовый квас'">
+            <div class="hideen">
+              <h2></h2>
+              <p></p>
+              <a href="#"></a>
+          </li>
+        </ul>
+      </section>
+      <ul class=" page-content pagination">
+        <li class="pagination__item">
+          <a class="active">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">3</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">Следующая</a>
+        </li>
       </ul>
-      <ul class="sorting__arrows">
-        <li class="sorting__arrows-up">
-         <a class="sorting__arrows-link" href="#"></a>
-        </li>
-        <li class="sorting__arrows-down">
-          <a class="sorting__arrows-link" href="#"></a>
-        </li>
-      </ul>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <img src="img/catalog/sedona.jpg" height="578" width="359" alt="Шаблон 'Sedona'">
-          <div class="hideen">
-           <h2></h2>
-           <p></p>
-           <a href="#"></a>
-          </div> 
-        </li>
-        <li class="catalog__item">
-          <img src="img/catalog/pink.jpg" height="578" width="359" alt="Шаблон 'PINK APP'">
-          <div class="hideen">
-            <h2></h2>
-            <p></p>
-            <a href="#"></a>
-        </li>
-        <li class="catalog__item">
-          <img src="img/catalog/barbershop.jpg" height="578" width="359" alt="Шаблон 'Barbershop BORODINSKI'">
-          <div class="hideen">
-            <h2></h2>
-            <p></p>
-            <a href="#"></a>
-        </li>
-        <li class="catalog__item">
-          <img src="img/catalog/baskets.jpg" height="578" width="359" alt="Шаблон 'Вязанные корзинки'">
-          <div class="hideen">
-            <h2></h2>
-            <p></p>
-            <a href="#"></a>
-        </li>
-        <li class="catalog__item">
-          <img src="img/catalog/forms.jpg" height="578" width="359" alt="Шаблон 'Формы обучения'">
-          <div class="hideen">
-            <h2></h2>
-            <p></p>
-            <a href="#"></a>
-        </li>
-        <li class="catalog__item">
-          <img src="img/catalog/craft.jpg" height="578" width="359" alt="Шаблон 'Кравтовый квас'">
-          <div class="hideen">
-            <h2></h2>
-            <p></p>
-            <a href="#"></a>
-        </li>
-      </ul>
-    </section>
-    <ul class=" page-content pagination">
-      <li class="pagination__item">
-        <a class="active">1</a>
-      </li>
-      <li class="pagination__item">
-        <a class="pagination__link" href="#">2</a>
-      </li>
-      <li class="pagination__item">
-        <a class="pagination__link" href="#">3</a>
-      </li>
-      <li class="pagination__item">
-        <a class="pagination__link" href="#">Следующая</a>
-      </li>
-    </ul>
   </main>
   <footer class="page-footer">
     <section class="page-footer map">
@@ -186,19 +194,17 @@
       <section class="map__contacts contacts">
         <h2 class="contacts__title">Напишите нам</h2>
         <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="contacts__form-item contacts__form-item--text ">
-            <label class="contacts__label contacts__label--text" for="appointment-name">Ваше имя:</label>
-            <input class="contacts__input contacts__input--text" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+          <p class="contacts__form-item">
+            <label for="appointment-name">Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
           <p class="contacts__form-item contacts__form-item--email">
-            <label class="contacts__label contacts__label--email" for="appointment-email">Ваш емейл:</label>
-            <input class="contacts__input contacts__input--email" id="appointment-email" type="email" name="email"
-              placeholder="email@example.com">
+            <label for="appointment-email">Ваш емейл:</label>
+            <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
           </p>
           <p class="contacts__form-item contacts__form-item--messege-field">
-            <label class="contacts__label contacts__label--messege-field" for="appointment-text">Текст письма:</label>
-            <input class="contacts__input contacts__input--messege-field" id="appointment-text" type="text" name="text"
-              placeholder="В свободной форме">
+            <label for="appointment-text">Текст письма:</label>
+            <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
           </p>
           <button class="contacts__button" type="submit">Отправить</button>
         </form>
@@ -206,22 +212,23 @@
     </section>
     <section class="socials">
       <ul class="socials__list">
-        <li class="socials__item socials__item--vk">
+        <li class="socials__item">
           <a class="socials__link socials__link--vk" href="#">Вконтакте</a>
         </li>
-        <li class="socials__item socials__item--fb">
+        <li class="socials__item">
           <a class="socials__link socials__link--fb" href="#">Фэйсбук</a>
         </li>
-        <li class="socials__item socials__item--insta">
+        <li class="socials__item">
           <a class="socials__link socials__link--insta" href="#">Инстаграм</a>
         </li>
       </ul>
     </section>
-    <div class="socials__friends friends">
+    <div class="friends">
       <p class="friends__profitable">Давайте дружить, это выгодно!</p>
       <p class="friends__discounts">Скидка 10% для друзей из социальных сетей.</p>
     </div>
     </section>
   </footer>
-  </body>
+</body>
+
 </html>
