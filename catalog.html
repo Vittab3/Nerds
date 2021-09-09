@@ -49,11 +49,11 @@
       <!--Фильтр товаров-->
       <h2>Фильтр товаров</h2>
       <form class="filters__form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filters__form cost">
+        <fieldset class="cost">
           <p class="cost__text">Стоимость:</p>
           <!--Стоимость+ползунок-->
         </fieldset>
-        <fieldset class="filters__form grid">
+        <fieldset class="grid">
           <legend class="grid__text">Сетка:</legend>
           <ul class="grid__list">
             <li class="grid__item">
@@ -70,7 +70,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filters__form features">
+        <fieldset class="features">
           <legend class="features__text">Особенности:</legend>
           <ul class="features__list">
             <li class="features__item">
@@ -86,8 +86,7 @@
               <label for="filter-news">Новости</label>
             </li>
             <li class="features__item">
-              <input type="checkbox" name="gallery"
-                id="filter-gallery">
+              <input type="checkbox" name="gallery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
             <li class="features__item">
@@ -96,10 +95,10 @@
             </li>
           </ul>
         </fieldset>
+        <button class="page-content__button" type="submit">Отправить</button>
       </form>
-      <button class="page-content__button" type="submit">Отправить</button>
     </aside>
-    <section class="page-content catalog">
+    <section class="catalog">
       <!--Сортировка + готовые шаблоны-->
       <h2>Готовые шаблоны</h2>
       <section class="catalog__sort sorting">
@@ -163,7 +162,7 @@
           </li>
         </ul>
       </section>
-      <ul class=" page-content pagination">
+      <ul class="pagination">
         <li class="pagination__item">
           <a class="active">1</a>
         </li>
